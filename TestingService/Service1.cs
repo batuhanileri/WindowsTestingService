@@ -1,4 +1,4 @@
-﻿using Core;
+﻿using CoreLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,10 +23,11 @@ namespace TestingService
 
         protected override void OnStart(string[] args)
         {
-            timer1 = new Timer(10000);
+            timer1 = new Timer(600000);
             timer1.Interval = 1000;
             timer1.Start();
             timer1.Elapsed += new ElapsedEventHandler(Timer_Elapsed);
+
         }
 
         protected override void OnStop()

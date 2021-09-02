@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace Core
+namespace CoreLayer
 {
     public class Util
     {
@@ -48,11 +48,8 @@ namespace Core
         }
         public static void DatabaseUpdate()
         {
-
-
             try
             {
-
                 SqlConnection sqlConnection = new SqlConnection(@"data source= DESKTOP-5KB93N3\SQLEXPRESS; Initial Catalog = SendMailDb; Integrated Security = True");
 
                 sqlConnection.Open();
